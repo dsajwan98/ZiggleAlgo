@@ -10,7 +10,7 @@ function luhn(el){
     var arr=str;
     var sum=0;
     for(i=str.length-2;i>=0;i-=2){
-        str[i]=parseInt(str[i]);
+        str[i]=pareInt(str[i]);
        
         str[i]=str[i]*2;
         if(str[i]>9){
